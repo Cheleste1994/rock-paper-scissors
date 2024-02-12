@@ -10,10 +10,10 @@ class GameInterface extends Game {
     });
 
     this.validateMoves();
-    this.startGame();
     this.key = this.generateKey();
     this.computerMove = this.generateComputerMove();
     this.hmac = this.calculateHMAC(this.computerMove, this.key);
+    this.startGame();
   }
 
   validateMoves() {

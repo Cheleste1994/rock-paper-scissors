@@ -4,6 +4,7 @@ export default class Game {
   tableHeaderLine;
   key;
   hmac;
+  computerMove;
 
   constructor(moves) {
     this.moves = moves;
