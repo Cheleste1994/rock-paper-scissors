@@ -2,12 +2,11 @@ import crypto from "crypto";
 
 export default class Game {
   tableHeaderLine;
+  key;
+  hmac;
 
   constructor(moves) {
     this.moves = moves;
-    this.key = this.generateKey();
-    this.computerMove = this.generateComputerMove();
-    this.hmac = this.calculateHMAC(this.computerMove, this.key);
   }
 
   generateKey() {
